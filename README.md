@@ -1,58 +1,97 @@
 🎨 Image Color Detector – Python Project
+📌 Overview
 
-The Image Color Detector is a Python-based desktop application built using Tkinter, OpenCV, PIL, and Pandas.
+The Image Color Detector is a Python-based desktop application built using Tkinter, OpenCV, PIL, Pandas, and ReportLab.
 It allows users to:
-Upload an image or use the live webcam
+
+Upload an image
+
+Use live webcam
+
 Detect colors by double-clicking on any pixel
-Display the color name and RGB values
-Generate a PDF report of detected colors
-View or print the selected image
-This project is highly useful for designers, developers, artists, and color enthusiasts.
+
+Display color name & RGB values
+
+Save detected colors as a PDF
+
+Print/view selected image
+
+This project is useful for designers, developers, artists, and color enthusiasts.
+
 🧰 Tech Stack & Libraries Used
 Python Libraries
+
 Tkinter → GUI
+
 OpenCV → Image processing & webcam
-Pillow (PIL) → Image viewing
-Pandas → Color dataset (CSV) processing
+
+Pillow (PIL) → Image display
+
+Pandas → Read color dataset
+
 ReportLab → PDF generation
-Install required libraries:
+
+Install required libraries
 pip install opencv-python pillow pandas reportlab
+
 ✨ Features
 ✔ Image Upload
+
 Select and load any image from your system.
+
 ✔ Live Camera Mode
+
 Capture colors in real-time using your webcam.
+
 ✔ Color Detection
-Double-click any pixel to detect:
+
+Double-click any point to get:
+
 Color name
+
 RGB values
-Display rectangle with color previe
+
+Color preview rectangle
+
 ✔ Color History
-All detected colors are listed in a Tkinter Listbox.
+
+All detected colors appear in a Tkinter Listbox.
+
 ✔ Save as PDF
-Detected colors can be exported to detected_colors.pdf.
-✔ Print Image
+
+Exports all detected colors to detected_colors.pdf.
+
+✔ Print / View Image
+
 Opens the uploaded image using the default system viewer.
+
 ✔ User-Friendly GUI
-Beautiful buttons, labels, and easy navigation.
+
+Stylish buttons & easy navigation.
+
 📂 Project Structure
 Image_Color_Detector/
 │
 ├── main.py
 ├── colors.csv
-├── detected_colors.pdf (auto-generated)
+├── detected_colors.pdf   # auto-generated
 └── README.md
-colors.csv contains color names and RGB values used for comparison.
+
+
+colors.csv contains color names & RGB values.
+
 🚀 How to Run the Application
 1. Clone the repository
 git clone <your-github-ssh-url>
-2. Open the project folder
+
+2. Open project folder
 cd Image_Color_Detector
+
 3. Install dependencies
 pip install -r requirements.txt
 
 
-(Or manually install libraries listed earlier)
+(Or install manually)
 
-4. Run the application
+4. Run the app
 python main.py
